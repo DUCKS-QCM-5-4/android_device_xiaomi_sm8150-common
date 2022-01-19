@@ -16,3 +16,6 @@ set_prop(vendor_init, vendor_fingerprint_prop)
 
 # Allow vendor_init to set IPA device node permissions
 allow vendor_init vendor_ipa_dev:file create_file_perms;
+
+# Allow to shoot itself
+allow vendor_init self:capability kill;
