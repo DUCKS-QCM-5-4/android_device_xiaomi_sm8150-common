@@ -1,0 +1,2 @@
+allow fsck sysfs:file { getattr };
+allow fsck self:capability kill;
