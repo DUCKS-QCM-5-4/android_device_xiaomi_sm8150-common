@@ -2,6 +2,7 @@
 # dada: dada-user 16 BP2A.250605.015 OS2.0.217.0.WOCMIXM release-keys
 # raphael: raphael-user 11 RKQ1.200826.002 V12.5.2.0.RFKMIXM release-keys
 # vayu: vayu_global-user 13 RKQ1.200826.002 V14.0.3.0.TJUMIXM release-keys
+# FP4: Fairphone/FP4eea/FP4:15/FP4.QREL.15.19.1/15.19.1:user/release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -151,12 +152,13 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display (HDR)
+# Display (HDR) - from FP4
 vendor/lib64/libhdr_tm.so
 
-# Display (SDM)
+# Display (SDM) - from FP4
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
+vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
@@ -165,15 +167,14 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display (SDM) - from qssi_NX627J-user 11 RKQ1.200826.002 nubia.20210420.160129 release-keys
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-
 # Display calibration data
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
-# Display postprocessing
+# Display postprocessing - from FP4
 vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/qdcmss
+vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
