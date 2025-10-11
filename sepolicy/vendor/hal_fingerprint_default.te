@@ -46,6 +46,10 @@ allow hal_fingerprint_default vendor_sysfs_spss:file r_file_perms;
 allow hal_fingerprint_default sysfs_touchpanel:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_touchpanel:file rw_file_perms;
 
+# Allow the fingerprint HAL to access the extcon sysfs files
+allow hal_fingerprint_default sysfs_extcon:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_extcon:file rw_file_perms;
+
 # ADSP access
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
