@@ -30,15 +30,15 @@
     for device in /sys/devices/platform/soc
     do
         #Enable mem_latency governor for L3, LLCC, and DDR scaling
-        for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
+        for memlat in $device/*qcom,devfreq-l3/*cpu*-lat/devfreq/*cpu*-lat
         do
             echo "mem_latency" > $memlat/governor
             echo 10 > $memlat/polling_interval
             echo 400 > $memlat/mem_latency/ratio_ceil
 	    done
 
-        #Enable userspace governor for L3 cdsp nodes
-        for l3cdsp in $device/*cdsp-cdsp-l3-lat/devfreq/*cdsp-cdsp-l3-lat
+        #Enable cdspl3 governor for L3 cdsp nodes
+        for l3cdsp in $device/*qcom,devfreq-l3/*cdsp-l3-lat/devfreq/*cdsp-l3-lat
         do
             echo "cdspl3" > $l3cdsp/governor
         done
@@ -51,13 +51,13 @@
         done
 
         #Gold L3 ratio ceil
-        for l3gold in $device/*cpu4-cpu-l3-lat/devfreq/*cpu4-cpu-l3-lat
+        for l3gold in $device/*qcom,devfreq-l3/*cpu4-cpu-l3-lat/devfreq/*cpu4-cpu-l3-lat
         do
             echo 4000 > $l3gold/mem_latency/ratio_ceil
         done
 
         #Prime L3 ratio ceil
-        for l3prime in $device/*cpu7-cpu-l3-lat/devfreq/*cpu7-cpu-l3-lat
+        for l3prime in $device/*qcom,devfreq-l3/*cpu7-cpu-l3-lat/devfreq/*cpu7-cpu-l3-lat
         do
             echo 20000 > $l3prime/mem_latency/ratio_ceil
         done
