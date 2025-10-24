@@ -201,7 +201,7 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libdpmqmihal.so
 
-# DRM (QSEECom) - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# DRM (QSEECom) - from haydn V816.0.18.0.UKKMIXM
 vendor/bin/qseecomd
 vendor/lib64/libQSEEComAPI.so
 
