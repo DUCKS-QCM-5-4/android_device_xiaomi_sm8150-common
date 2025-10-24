@@ -154,14 +154,15 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display (HDR) - from FP4
+# Display (HDR) - from FP5
 vendor/lib64/libhdr_tm.so
 
-# Display (SDM) - from FP4
+# Display (SDM) - from FP5
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
+vendor/lib64/librcmask.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
@@ -173,12 +174,15 @@ vendor/lib64/libtinyxml2_1.so
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
-# Display postprocessing - from FP4
+# Display postprocessing - from FP5
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
+vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
