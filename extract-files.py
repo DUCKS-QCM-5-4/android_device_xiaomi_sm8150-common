@@ -29,6 +29,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/wfdconfig.xml': blob_fixup()
         .regex_replace('<AudioStreamInSuspend>0</AudioStreamInSuspend>', '<AudioStreamInSuspend>1</AudioStreamInSuspend>')
         .regex_replace('<HID>0</HID>', '<HID>1</HID>'),
+    'vendor/lib64/libdpps.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
