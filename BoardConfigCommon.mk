@@ -42,6 +42,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Audio
+AUDIO_FEATURE_ENABLED_GKI := true
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
@@ -94,7 +95,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 TARGET_KERNEL_CONFIG := \
-    vendor/sm8150-perf_defconfig \
+    vendor/sm8150-qgki_defconfig \
     vendor/xiaomi/sm8150-common.config
 TARGET_KERNEL_NO_GCC := true
 
