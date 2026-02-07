@@ -51,7 +51,7 @@ lib_fixups: lib_fixups_user_type = {
 
 namespace_imports = [
     'device/xiaomi/sm8150-common',
-    'hardware/qcom-caf/sm8150',
+    'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
     'vendor/qcom/opensource/commonsys-intf/display',
