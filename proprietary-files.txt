@@ -229,7 +229,7 @@ vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# DRM (OEM Crypto API) - from munch-user V816.0.9.0.ULMMIXM
+# DRM (OEM Crypto API) - from haydn - V816.0.18.0.UKKMIXM
 vendor/lib64/libcpion.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/liboemcrypto.so
