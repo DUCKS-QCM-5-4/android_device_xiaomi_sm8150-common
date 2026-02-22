@@ -481,6 +481,11 @@ vendor/lib64/unnhal-acc-hvx.so
 # NVRAM
 vendor/bin/nv_mac
 
+# OMX
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
+vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
