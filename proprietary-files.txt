@@ -481,7 +481,7 @@ vendor/lib64/unnhal-acc-hvx.so
 # NVRAM
 vendor/bin/nv_mac
 
-# OMX
+# OMX - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
 vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
