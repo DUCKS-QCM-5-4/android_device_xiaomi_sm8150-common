@@ -37,6 +37,14 @@
             echo 400 > $memlat/mem_latency/ratio_ceil
 	    done
 
+        #Enable mem_latency governor for LLCC and DDR scaling
+        for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
+        do
+            echo "mem_latency" > $memlat/governor
+            echo 10 > $memlat/polling_interval
+            echo 400 > $memlat/mem_latency/ratio_ceil
+        done
+
         #Enable cdspl3 governor for L3 cdsp nodes
         for l3cdsp in $device/*qcom,devfreq-l3/*cdsp-l3-lat/devfreq/*cdsp-l3-lat
         do
