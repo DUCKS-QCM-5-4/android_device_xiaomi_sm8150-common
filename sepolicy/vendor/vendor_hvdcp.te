@@ -1,0 +1,5 @@
+# Allow access to IIO sysfs bus dir
+allow vendor_hvdcp sysfs_iio:dir { read open search };
+
+# Allow access to sysfs files
+allow vendor_hvdcp sysfs:file { read open getattr write };

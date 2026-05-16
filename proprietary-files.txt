@@ -87,8 +87,10 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
+# Charger - from Zambezi(v7b)
+vendor/bin/hvdcp_opti|d09ed88ab23ea2c9694049cff50622771704ca31
+
 # Charger
-vendor/bin/hvdcp_opti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
