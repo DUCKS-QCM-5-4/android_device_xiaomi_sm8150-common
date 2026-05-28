@@ -151,10 +151,10 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display (HDR) - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# Display (HDR) - from FP4.QREL.15.14.3
 vendor/lib64/libhdr_tm.so
 
-# Display (SDM) - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# Display (SDM) - from FP4.QREL.15.14.3
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
@@ -169,10 +169,11 @@ vendor/lib64/libtinyxml2_1.so
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
-# Display postprocessing - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# Display postprocessing - from FP4.QREL.15.14.3
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
+vendor/lib64/libdpps.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
