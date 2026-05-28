@@ -256,7 +256,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno) - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# Graphics (Adreno) - FP4.QREL.15.14.3
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -290,7 +290,7 @@ vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
-# Graphics (Vulkan) - from munch-user RKQ1.211001.001 V816.0.9.0.ULMMIXM
+# Graphics (Vulkan) - FP4.QREL.15.14.3
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
