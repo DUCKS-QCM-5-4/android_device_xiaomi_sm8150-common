@@ -178,10 +178,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
