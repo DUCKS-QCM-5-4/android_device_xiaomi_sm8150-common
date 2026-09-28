@@ -456,7 +456,7 @@ vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
 vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
+vendor/lib/libqcodec2_utils.so|25603a8e718655870c65996ba23c57f864e02410
 vendor/lib/libqcodec2_v4l2codec.so
 
 # Media configs
