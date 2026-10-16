@@ -246,6 +246,21 @@ PRODUCT_PACKAGES += \
     media_codecs_performance_c2.xml \
     video_system_specs.json
 
+# OMX Media configs
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libc2dcolorconvert \
+    libOmxCore \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw \
+    libstagefright_softomx_plugin.vendor \
+    system_properties.xml \
+    libOmxVideoDSMode \
+    libOmxVpp
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/omx/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
