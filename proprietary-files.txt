@@ -162,7 +162,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/libhdr_tm.so
 
 # Display (SDM) - from XQ-DC54
-vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayqos.so|687c89c465658b3e2602004ffff28bdbab905405
 vendor/lib64/libdpps.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
