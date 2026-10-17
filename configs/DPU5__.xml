@@ -1,0 +1,62 @@
+<XML>
+<SDE501>
+  <Param0>6.0</Param0> <!-- ib_fudge_factor: sm8150, kernel core-ib-ff default 6.0 -->
+  <Param1>8</Param1> <!-- macrotile_nv12_prefill_lines: sm8150: Tiled_NV12 -->
+  <Param2>4</Param2> <!-- macrotile_prefill_lines: sm8150: Tiled -->
+  <Param3>1</Param3> <!-- linear_prefill_lines: sm8150: Linear -->
+  <Param4>1</Param4> <!-- downscale_prefill_lines: sm8150: Scale -->
+  <Param5>2</Param5> <!-- extra_prefill_lines: sm8150 -->
+  <Param6>2</Param6> <!-- undersized_prefill_lines: sm8150, kernel default 2 (DPU660 uses 0 with a TODO) -->
+  <Param7>3</Param7> <!-- dest_scale_prefill_lines: sm8150, kernel default 3 -->
+  <Param8>25</Param8> <!-- amortizable_threshold: sm8150, kernel default 25 -->
+  <Param9>1.05</Param9> <!-- clk_fudge_factor: sm8150 -->
+  <Param10>24</Param10> <!-- min_prefill_lines: sm8150, sm8150 catalog min_prefill_lines -->
+  <Param11>4500.0</Param11> <!-- default_pipe_bw_limit_mbps: sm8150, qcom,sde-max-per-pipe-bw-kbps 4500000 -->
+  <Param12>2400.0</Param12> <!-- min_core_ib_mbps: sm8150, qcom,sde-min-core-ib-kbps 2400000 -->
+  <Param13>2</Param13> <!-- mnoc_port_count: sm8150, MDP0 and MDP1 are separate MNOC HF masters the sm8150 interconnect driver -->
+  <Param14>32</Param14> <!-- ubwc_core_bus_width: from DPU660, not sure -->
+  <Param15>1.5</Param15> <!-- ubwc4_fudge_factor: from DPU660, not sure -->
+  <Param16>1.5</Param16> <!-- ubwc_fudge_factor: from DPU660, not sure -->
+  <Param17>4.0</Param17> <!-- tp10y_plane_factor_numerator: from DPU660, not sure -->
+  <Param18>3</Param18> <!-- tp10y_plane_factor_denominator: from DPU660, not sure -->
+  <Param19>2</Param19> <!-- inline_prefill_fudge_factor: from DPU660, not sure -->
+  <Param20>48</Param20> <!-- inline_prefill_lines_tp10: from DPU660, not sure -->
+  <Param21>32</Param21> <!-- inline_prefill_lines_nv12: from DPU660, not sure -->
+  <Param22>3</Param22> <!-- dsc_prefill_lines: from DPU660, not sure -->
+  <Param23>800.0</Param23> <!-- default_llcc_ib_mbps: sm8150, qcom,sde-min-llcc-ib-kbps 800000 -->
+  <Param24>261.0</Param24> <!-- svs_l1_limit_mhz: from DPU660, not sure -->
+  <Param25>4800.0</Param25> <!-- min_l1cc_ib_mbps_low: from DPU660, not sure -->
+  <Param26>9600.0</Param26> <!-- min_l1cc_ib_mbps_high: from DPU660, not sure -->
+  <Param27>4.0</Param27> <!-- prefill_tile_threshold: from DPU660, not sure -->
+  <Param28>1.1</Param28> <!-- downscale_fudge_factor: from DPU660, not sure -->
+  <Param29>61440</Param29> <!-- lutdma_gamut_bytes: from DPU660, not sure -->
+  <Param30>4608</Param30> <!-- lutdma_igc_bytes: from DPU660, not sure -->
+  <Param31>8</Param31> <!-- lutdma_line_vote: from DPU660, not sure -->
+  <Param32>2</Param32> <!-- p010_plane_factor: from DPU660, not sure -->
+  <Param33>75</Param33> <!-- min_svs_in_mhz: from DPU660, not sure -->
+  <Param34>256</Param34> <!-- mnoc_bus_width_in_bits: sm8150, qxm_mdp0/qxm_mdp1 buswidth 32 bytes = 256 bits -->
+  <Param35>100</Param35> <!-- mnoc_margin_in_mbps: from DPU660, not sure -->
+  <Param36>2</Param36> <!-- num_dram_channel: sm8150, qcom,sde-dram-channels 2 (interconnect ebi node has 4 channels) -->
+  <Param37>4</Param37> <!-- dram_channel_limit: from DPU660, not sure -->
+  <Param38>800</Param38> <!-- dram_ib_low_mbps: sm8150, qcom,sde-min-dram-ib-kbps 800000 -->
+  <Param39>1600</Param39> <!-- dram_ib_high_mbps: from DPU660, not sure -->
+  <Param40>2</Param40> <!-- default_horz_rate: from DPU660, not sure -->
+  <Param41>4</Param41> <!-- nv12_horz_rate: from DPU660, not sure -->
+  <Param42>3</Param42> <!-- tp10_horz_rate: from DPU660, not sure -->
+  <Param43>1.45</Param43> <!-- yuv420_planar_horz_rate: from DPU660, not sure -->
+  <Param44>1.0</Param44> <!-- normal_noc_efficiency_factor: from DPU660, not sure -->
+  <Param45>1.0</Param45> <!-- camera_noc_efficiency_factor: from DPU660, not sure -->
+  <Param46>4500</Param46> <!-- camera_pipe_bw_limit_mbps: sm8150, same as per-pipe limit -->
+  <Param47>0.25</Param47> <!-- misaligned_tile_threshold: from DPU660, not sure -->
+  <Param48>3.0</Param48> <!-- nv12_extra_fetch_bpp: from DPU660, not sure -->
+  <Param49>5.33</Param49> <!-- tp10_extra_fetch_bpp: from DPU660, not sure -->
+  <Param50>16</Param50> <!-- xin_bus_width: from DPU660, not sure -->
+  <Param51>1.7</Param51> <!-- xin_bus_inline_rot_throughput_factor: from DPU660, not sure -->
+  <Param52>1.4</Param52> <!-- xin_bus_throughput_factor: from DPU660, not sure -->
+  <Param53>32</Param53> <!-- inline_prefill_lines_p010: from DPU660, not sure -->
+  <Param54>16</Param54> <!-- inline_prefill_lines_rgba8888: from DPU660, not sure -->
+  <Param55>8.33</Param55> <!-- p010_extra_fetch: from DPU660, not sure -->
+  <Param56>8.0</Param56> <!-- rgba8888_extra_fetch: from DPU660, not sure -->
+  <Param57>75</Param57> <!-- min_mnoc_freq_mbps: from DPU660, not sure -->
+</SDE501>
+</XML>
