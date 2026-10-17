@@ -40,6 +40,15 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/libdisplayqos.so': blob_fixup()
+        .sig_replace(
+            'a1 07 00 54', # b.ne LAB_00115ffc
+            '1f 20 03 d5', # nop
+        )
+        .sig_replace(
+            '44 50 55 36 36 30 2e 78 6d 6c', # DPU660.xml
+            '44 50 55 35 5f 5f 2e 78 6d 6c', # DPU5__.xml
+        ),
 }  # fmt: skip
 
 
