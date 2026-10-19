@@ -21,9 +21,3 @@ prebuilt_etc {
     src: "video_system_specs.json",
     vendor: true,
 }
-
-prebuilt_etc {
-    name: "system_properties.xml",
-    src: "system_properties.xml",
-    vendor: true,
-}
