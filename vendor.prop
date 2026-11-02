@@ -265,8 +265,6 @@ vendor.gralloc.disable_ubwc=0
 ro.incremental.enable=yes
 
 # Media
-debug.stagefright.c2inputsurface=-1
-ro.odm.build.media_performance_class=30
 vendor.media.omx=1
 
 # Netmgr

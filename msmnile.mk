@@ -258,6 +258,8 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw \
     libstagefright_softomx_plugin.vendor \
+    media_codecs.xml \
+    media_codecs_performance.xml \
     system_properties.xml \
     libOmxVideoDSMode \
     libOmxVpp
