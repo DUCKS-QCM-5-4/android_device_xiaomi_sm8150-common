@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel Version
+TARGET_KERNEL_VERSION := 5.4
+
 COMMON_PATH := device/xiaomi/sm8150-common
 
 # A/B
