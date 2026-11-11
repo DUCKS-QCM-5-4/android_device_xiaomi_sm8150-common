@@ -9,6 +9,7 @@ cc_binary {
     vintf_fragments: ["vendor.lineage.livedisplay-service.mi_sm8150.xml"],
     relative_install_path: "hw",
     srcs: [
+        "AdaptiveBacklight.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
